@@ -21,5 +21,5 @@
     <div id="info">
         <h1><a href="index.php">To Do List</a></h1>
     </div>
-    <?php include_once('templates/common/user.php'); ?>
+    <?php include_once('pages/common/user.php'); ?>
 </header>

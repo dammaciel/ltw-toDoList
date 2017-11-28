@@ -1,13 +1,13 @@
 <div id="user">
-  <?php if (isset($_SESSION['username']) && $_SESSION['username'] != '') { ?>
-    <form action="../actions/action_logout.php" method="post">
-       <?=$_SESSION['username']?></a>
-      <input type="submit" value="Logout">
-    </form>
-  <?php } else { ?>
-    </form><button class="createAccount-button" id="btnSignIn" onclick="visibleLogin()">Login</button>
-    </form><button class="createAccount-button" id="btnCreateAccount" onclick="visibleCreateAcc()">Register</button>
-  <?php } ?>
+    <?php if (isset($_SESSION['username']) && $_SESSION['username'] != '') { ?>
+        <form action="..action_logout.php" method="post"> //por implementar
+            <?=$_SESSION['username']?></a>
+            <input type="submit" value="Logout">
+        </form>
+    <?php } else { ?>
+        </form><button class="createAccount-button" id="btnSignIn" onclick="visibleLogin()">Login</button>
+        </form><button class="createAccount-button" id="btnCreateAccount" onclick="visibleCreateAcc()">Register</button>
+    <?php } ?>
 
 </div>
 
@@ -17,7 +17,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <h1>Login</h1>
-        <form action="../actions/action_login.php"> 
+        <form action="../action_login.php"> 
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
             <label><b>Password</b></label>
@@ -33,7 +33,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <h1>Sign Up</h1>
-        <form action="../actions/action_register.php"> 
+        <form action="../action_register.php" method="post"> 
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
             <label><b>Email</b></label>
