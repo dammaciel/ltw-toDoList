@@ -1,24 +1,25 @@
 <?php
+include_once('includes/init.php');
 
 function createUser($username, $password, $email, $name) {
     global $db;
-    global $USER_GROUP_ID;
-    $statement = $db->prepare('INSERT INTO Users VALUES(NULL, ?, ?, ?, ?, ?, NULL, NULL, NULL)');
-    $statement->execute([$username, $password, $email, $name, $USER_GROUP_ID]);
+    $statement = $db->prepare('INSERT INTO Users VALUES(NULL, ?, ?, ?, ?, NULL, NULL, NULL)');
+    $statement->execute([$username, $password, $email, $name]);
     return $statement->errorInfo();
 }
 
 function isLoginCorrect($username, $password) {
-    global $dbh;
-    $stmt = $dbh->prepare('SELECT * FROM user WHERE username = ? AND password = ?');
+    global $db;
+    $stmt = $db->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
     $stmt->execute(array($username, sha1($password)));
     return $stmt->fetch() !== false;
 }
 
 function usernameAlreadyExists($username){
     global $db;
-    $statement = $db->prepare('SELECT * FROM user WHERE username = :username');
-    $statement->execute(array(':username' => $username));
+    $statement = $db->prepare('SELECT * FROM users WHERE username = ?');
+    $statement->execute(array($username));
+    echo "passoooou";
     return $statement->fetch();
 }
 

@@ -1,5 +1,4 @@
 <?php
-include_once('includes/init.php');
 include_once('database/users.php');
 
 $username = htmlspecialchars($_POST['username']);

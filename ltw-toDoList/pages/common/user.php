@@ -17,7 +17,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <h1>Login</h1>
-        <form action="../action_login.php"> 
+        <form action="../action_login.php" method="post"> 
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
             <label><b>Password</b></label>
