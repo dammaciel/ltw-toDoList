@@ -19,7 +19,6 @@ function usernameAlreadyExists($username){
     global $db;
     $statement = $db->prepare('SELECT * FROM users WHERE username = ?');
     $statement->execute(array($username));
-    echo "passoooou";
     return $statement->fetch();
 }
 
@@ -34,7 +33,7 @@ function signUp($username,$fullname,$date,$password,$gender){
     if(strtoupper($gender)=='FEMALE')
         $photo = 'photo0F.jpg';
     else $photo = 'photo0.jpg';
-    $statement = $db->prepare('INSERT INTO users (username,fullname,birthDate,photoId,gender,password) VALUES (?,?,?,?,?,?,?)');
+    $statement = $db->prepare('INSERT INTO users (username,fullname,birthDate,photoId,gender,password) VALUES (?,?,?,?,?,?)');
     if($statement->execute([$username,$fullname,$date,$photo,$gender,password_hash($password, PASSWORD_DEFAULT)])){
         $_SESSION['login-user']=$username;
         unset($_SESSION["ERROR"]);
@@ -65,4 +64,27 @@ function login($username, $password) {
     }
 }
 
+
+function generate_random_token() {
+    $token = bin2hex(openssl_random_pseudo_bytes(16));
+    return $token;
+}
+
+function getIdByUserName($userName){
+    global $db;
+    $statement = $db->prepare('SELECT id FROM users WHERE username = ? ');
+    $statement->execute([$userName]);
+    return $statement->fetch()['id'];
+}
+
+function getUserInfoByUserName($username,$info){
+    if($info == 'password')
+        return null;
+
+    global $db;
+    $statement = $db->prepare('SELECT * FROM users WHERE username = ? ');
+    $statement->execute([$username]);
+
+    return $statement->fetch()[$info];
+}
 ?>

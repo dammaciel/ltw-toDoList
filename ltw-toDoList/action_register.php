@@ -7,6 +7,12 @@ $fullname = htmlspecialchars($_POST['fullname']);
 $date = htmlspecialchars($_POST['birthDate']);
 $gender = htmlspecialchars($_POST['gender']);
 
+if ($_SESSION['signup-token'] !== $_POST['signup-token']) {
+    header('HTTP/1.0 403 Forbidden');
+    die();
+}
+$_SESSION['token'] = generate_random_token();
+
 if($username && $password){
     if(!usernameAlreadyExists($username)){
         if(validatePassword($password))

@@ -21,5 +21,14 @@
     <div id="info">
         <h1><a href="index.php">To Do List</a></h1>
     </div>
-    <?php include_once('pages/common/user.php'); ?>
+    <?php include_once('user.php'); ?>
 </header>
+
+<nav id="menu">
+    <ul>
+        <li><a href="pages/addList.php">List</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="contacts.php">Contacts</a></li>
+    </ul>
+</nav>

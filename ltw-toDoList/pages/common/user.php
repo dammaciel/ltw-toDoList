@@ -1,7 +1,7 @@
 <div id="user">
-    <?php if (isset($_SESSION['username']) && $_SESSION['username'] != '') { ?>
-        <form action="..action_logout.php" method="post"> //por implementar
-            <?=$_SESSION['username']?></a>
+    <?php if (isset($_SESSION['login-user']) && $_SESSION['login-user'] != '') { ?>
+        <form action="../action_logout.php" method="post">
+            <?=$_SESSION['login-user']?></a>
             <input type="submit" value="Logout">
         </form>
     <?php } else { ?>
@@ -34,6 +34,7 @@
     <div class="modal-content">
         <h1>Sign Up</h1>
         <form action="../action_register.php" method="post"> 
+            <input type="hidden" name="signup-token" value="<?php echo $_SESSION['signup-token']; ?>">
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
             <label><b>Email</b></label>
