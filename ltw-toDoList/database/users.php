@@ -1,5 +1,5 @@
 <?php
-include_once('includes/init.php');
+include_once(__DIR__ .'/../includes/init.php');
 
 function createUser($username, $password, $email, $name) {
     global $db;
@@ -87,4 +87,5 @@ function getUserInfoByUserName($username,$info){
 
     return $statement->fetch()[$info];
 }
+
 ?>

@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="182c4ea2-70ed-4f3e-b8cf-644dda33431b" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ltw-toDoList/pages/addList.php" afterPath="$PROJECT_DIR$/ltw-toDoList/addList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/action_login.php" afterPath="$PROJECT_DIR$/ltw-toDoList/action_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/action_register.php" afterPath="$PROJECT_DIR$/ltw-toDoList/action_register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/addList.php" afterPath="$PROJECT_DIR$/ltw-toDoList/database/addList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/connection.php" afterPath="$PROJECT_DIR$/ltw-toDoList/database/connection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/database.db" afterPath="$PROJECT_DIR$/ltw-toDoList/database/database.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/database.sql" afterPath="$PROJECT_DIR$/ltw-toDoList/database/database.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/listUtils.php" afterPath="$PROJECT_DIR$/ltw-toDoList/database/listUtils.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/database/users.php" afterPath="$PROJECT_DIR$/ltw-toDoList/database/users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/includes/init.php" afterPath="$PROJECT_DIR$/ltw-toDoList/includes/init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/index.php" afterPath="$PROJECT_DIR$/ltw-toDoList/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/js/main.js" afterPath="$PROJECT_DIR$/ltw-toDoList/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/pages/common/header.php" afterPath="$PROJECT_DIR$/ltw-toDoList/pages/common/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ltw-toDoList/pages/common/user.php" afterPath="$PROJECT_DIR$/ltw-toDoList/pages/common/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,42 +34,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/users.php">
+      <file leaf-file-name="action_login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding>
-                <marker date="1512414261793" expanded="true" signature="148:208" ph="INSERT INTO Users... " />
-                <marker date="1512414261793" expanded="true" signature="405:460" ph="SELECT * FRO... users" />
-                <marker date="1512414261793" expanded="true" signature="405:462" ph="SELECT * FRO... users" />
-                <marker date="1512414261793" expanded="true" signature="649:687" ph="SELECT * FRO... users" />
-                <marker date="1512414261793" expanded="true" signature="649:689" ph="SELECT * FRO... users" />
-                <marker date="1512414261793" expanded="true" signature="649:731" ph="SELECT * FRO... users" />
-                <marker date="1512414261793" expanded="true" signature="1091:1183" ph="INSERT INTO users... " />
-                <marker date="1512414261793" expanded="true" signature="1598:1655" ph="SELECT id,pa... users" />
-                <marker date="1512414261793" expanded="true" signature="2353:2392" ph="SELECT id FR... users" />
-                <marker date="1512414261793" expanded="true" signature="2622:2660" ph="SELECT * FRO... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ltw-toDoList/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addList.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/addList.php">
+      <file leaf-file-name="database.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/database.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="867">
+              <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myLists.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/myLists.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addItem.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addItem.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listUtils.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/listUtils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+              <folding>
+                <marker date="1512439734211" expanded="true" signature="205:276" ph="INSERT INTO lists... " />
+                <marker date="1512439734211" expanded="true" signature="603:640" ph="SELECT * FRO... lists" />
+                <marker date="1512439734211" expanded="true" signature="795:819" ph="SELECT * FRO... categories" />
+                <marker date="1512439734211" expanded="true" signature="973:997" ph="SELECT * FRO... categories" />
+                <marker date="1512439734211" expanded="true" signature="973:1010" ph="SELECT * FRO... categories" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addList.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -76,19 +103,19 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1512413571067" expanded="true" signature="14:45" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="157:183" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="585:1115" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="644:1108" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="725:1097" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="1156:1384" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="1215:1384" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="1301:1384" ph="..." />
-                <marker date="1512413571067" expanded="true" signature="1812:1973" ph="..." />
-              </folding>
+            <state relative-caret-position="901">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ltw-toDoList/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,8 +123,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,21 +139,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ltw-toDoList/database/user.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/database/connection.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/database/todolist.sql" />
         <option value="$PROJECT_DIR$/ltw-toDoList/action_login.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/action_register.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/action_logout.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/database/database.sql" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/database/listUtils.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/database/addList.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/includes/init.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/pages/common/user.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/index.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/pages/common/addList.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/database/users.php" />
-        <option value="$PROJECT_DIR$/ltw-toDoList/pages/common/header.php" />
         <option value="$PROJECT_DIR$/ltw-toDoList/pages/addList.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/includes/init.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/addList.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/database/connection.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/database/users.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/index.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/pages/common/header.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/js/main.js" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/database/addList.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/database/addItem.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/database/listUtils.php" />
+        <option value="$PROJECT_DIR$/ltw-toDoList/myLists.php" />
       </list>
     </option>
   </component>
@@ -159,7 +190,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,6 +206,12 @@
               <item name="ltw-toDoList" type="b2602c69:ProjectViewProjectNode" />
               <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ltw-toDoList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -183,6 +219,12 @@
               <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ltw-toDoList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ltw-toDoList" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ltw-toDoList" type="b2602c69:ProjectViewProjectNode" />
@@ -201,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,6 +253,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danma\Documents\GitHub\ltw-toDoList\ltw-toDoList" />
       <recent name="C:\Users\danma\Documents\GitHub\ltw-toDoList\ltw-toDoList\pages" />
       <recent name="C:\Users\danma\Documents\GitHub\ltw-toDoList\ltw-toDoList\pages\common" />
     </key>
@@ -246,12 +290,13 @@
       <updated>1511872834600</updated>
       <workItem from="1511872836304" duration="629000" />
       <workItem from="1512154448403" duration="10075000" />
-      <workItem from="1512395364451" duration="8961000" />
+      <workItem from="1512395364451" duration="21015000" />
+      <workItem from="1512472565918" duration="293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19665000" />
+    <option name="totallyTimeSpent" value="32012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -283,25 +328,105 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/listUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <marker date="1512439734211" expanded="true" signature="205:276" ph="INSERT INTO lists... " />
+            <marker date="1512439734211" expanded="true" signature="603:640" ph="SELECT * FRO... lists" />
+            <marker date="1512439734211" expanded="true" signature="795:819" ph="SELECT * FRO... categories" />
+            <marker date="1512439734211" expanded="true" signature="973:997" ph="SELECT * FRO... categories" />
+            <marker date="1512439734211" expanded="true" signature="973:1010" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/myLists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
           <folding>
-            <marker date="1512414261793" expanded="true" signature="148:208" ph="INSERT INTO Users... " />
-            <marker date="1512414261793" expanded="true" signature="405:460" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="405:462" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:687" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:689" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:731" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="1091:1183" ph="INSERT INTO users... " />
-            <marker date="1512414261793" expanded="true" signature="1598:1655" ph="SELECT id,pa... users" />
-            <marker date="1512414261793" expanded="true" signature="2353:2392" ph="SELECT id FR... users" />
-            <marker date="1512414261793" expanded="true" signature="2622:2660" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="161:221" ph="INSERT INTO Users... " />
+            <marker date="1512429956045" expanded="true" signature="418:473" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="418:475" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:700" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:702" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:744" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="1104:1196" ph="INSERT INTO users... " />
+            <marker date="1512429956045" expanded="true" signature="1611:1668" ph="SELECT id,pa... users" />
+            <marker date="1512429956045" expanded="true" signature="2366:2405" ph="SELECT id FR... users" />
+            <marker date="1512429956045" expanded="true" signature="2635:2673" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
@@ -334,17 +459,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <marker date="1512413571067" expanded="true" signature="14:45" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="157:183" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="585:1115" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="644:1108" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="725:1097" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1156:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1215:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1301:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1812:1973" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -381,27 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/LTW-FEUP-master/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3399">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -413,45 +511,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_login.php">
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
+          <caret line="1" column="71" lean-forward="false" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/includes/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/listUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <marker date="1512410666519" expanded="true" signature="304:375" ph="INSERT INTO lists... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,63 +527,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/index.php">
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/includes/init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/user.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.212/script.js" />
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512413571067" expanded="true" signature="14:45" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="157:183" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="585:1115" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="644:1108" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="725:1097" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1156:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1215:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1301:1384" ph="..." />
-            <marker date="1512413571067" expanded="true" signature="1812:1973" ph="..." />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="133" column="26" lean-forward="true" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/users.php">
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/addList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="23" selection-end-column="7" />
           <folding>
-            <marker date="1512414261793" expanded="true" signature="148:208" ph="INSERT INTO Users... " />
-            <marker date="1512414261793" expanded="true" signature="405:460" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="405:462" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:687" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:689" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="649:731" ph="SELECT * FRO... users" />
-            <marker date="1512414261793" expanded="true" signature="1091:1183" ph="INSERT INTO users... " />
-            <marker date="1512414261793" expanded="true" signature="1598:1655" ph="SELECT id,pa... users" />
-            <marker date="1512414261793" expanded="true" signature="2353:2392" ph="SELECT id FR... users" />
-            <marker date="1512414261793" expanded="true" signature="2622:2660" ph="SELECT * FRO... users" />
+            <marker date="1512428843871" expanded="true" signature="199:277" ph="..." />
+            <marker date="1512428843871" expanded="true" signature="301:834" ph="..." />
+            <marker date="1512428843871" expanded="true" signature="333:567" ph="..." />
+            <marker date="1512428843871" expanded="true" signature="350:552" ph="..." />
+            <marker date="1512428843871" expanded="true" signature="599:824" ph="..." />
+            <marker date="1512428843871" expanded="true" signature="616:809" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/addList.php">
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/Item.php" />
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="79" column="15" lean-forward="false" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
+          <folding>
+            <marker date="1512429956045" expanded="true" signature="161:221" ph="INSERT INTO Users... " />
+            <marker date="1512429956045" expanded="true" signature="418:473" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="418:475" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:700" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:702" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="662:744" ph="SELECT * FRO... users" />
+            <marker date="1512429956045" expanded="true" signature="1104:1196" ph="INSERT INTO users... " />
+            <marker date="1512429956045" expanded="true" signature="1611:1668" ph="SELECT id,pa... users" />
+            <marker date="1512429956045" expanded="true" signature="2366:2405" ph="SELECT id FR... users" />
+            <marker date="1512429956045" expanded="true" signature="2635:2673" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/pages/common/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="892" column="20" lean-forward="false" selection-start-line="892" selection-start-column="20" selection-end-line="892" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/action_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/listUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <marker date="1512439734211" expanded="true" signature="205:276" ph="INSERT INTO lists... " />
+            <marker date="1512439734211" expanded="true" signature="603:640" ph="SELECT * FRO... lists" />
+            <marker date="1512439734211" expanded="true" signature="795:819" ph="SELECT * FRO... categories" />
+            <marker date="1512439734211" expanded="true" signature="973:997" ph="SELECT * FRO... categories" />
+            <marker date="1512439734211" expanded="true" signature="973:1010" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/database/addItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltw-toDoList/myLists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

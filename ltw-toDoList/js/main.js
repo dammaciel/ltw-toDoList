@@ -14,4 +14,20 @@ function exitLogin() {
     $("#login-form").hide();
 }
 
+function visibleCreateList() {
+    $("#createList-form").show();
+}
+
+function exitCreateList() {
+    $("#createList-form").hide();
+}
+
+function visibleCreateItem() {
+    $("#createItem-form").show();
+}
+
+function exitCreateItem() {
+    $("#createItem-form").hide();
+}
+
 

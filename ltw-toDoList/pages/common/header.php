@@ -1,3 +1,4 @@
+<?php include_once('database/users.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -26,7 +27,6 @@
 
 <nav id="menu">
     <ul>
-        <li><a href="pages/addList.php">List</a></li>
         <li><a href="services.php">Services</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="contacts.php">Contacts</a></li>

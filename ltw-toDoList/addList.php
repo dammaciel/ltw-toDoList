@@ -1,10 +1,11 @@
 <?php
-include_once('common/header.php');
-include_once ('../database/users.php');
+include_once ('pages/common/header.php');
+include_once('includes/init.php');
 $_SESSION['token'] = generate_random_token();
+
 ?>
 
-<form class="addList" action="../database/addList.php" method="post">
+<form class="addList" action="database/addList.php" method="post">
     <input type="hidden" name="token" id="token" value="<?php echo $_SESSION['token']; ?>"/>
     <ul>
         <div class="container">
@@ -21,4 +22,6 @@ $_SESSION['token'] = generate_random_token();
             </li>
         </div>
 </form>
+
+<?php include_once('pages/common/footer.php'); ?>
 
