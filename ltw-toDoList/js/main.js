@@ -30,4 +30,7 @@ function exitCreateItem() {
     $("#createItem-form").hide();
 }
 
+function checkItem(id){
+
+}
 

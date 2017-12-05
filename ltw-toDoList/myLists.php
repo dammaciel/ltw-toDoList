@@ -10,7 +10,13 @@ $items = getItemsByListID($id);
     <ul>
         <?php foreach ($items as $item) { ?>
         <li><?= getItemInfoById($item['item_id'], 'title')?></li>
-    <?php } ?>
+            <?php if(!getItemInfoById($item['item_id'], 'completed')) {?>
+                <form class="checkList<?=$item['item_id'];?>" action="database/checkItem.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $item['item_id']; ?>">
+                    <input type="hidden" name="list" value="<?php echo $id; ?>">
+                    <input type="submit" value="Complete">
+                </form>
+    <?php }else{?> completed<?php }} ?>
     </ul>
     </section>
 
@@ -19,7 +25,6 @@ $items = getItemsByListID($id);
         <div class="modal-content">
             <h1>Create List</h1>
             <form class="addList" action="database/addItem.php" method="post">
-                <input type="hidden" name="token" id="token" value="<?php echo $_SESSION['token']; ?>"/>
                 <label><b>List</b></label>
                 <input type="hidden" name="list" value="<?php echo $id; ?>" readonly>
                 <label><b>Task</b></label>

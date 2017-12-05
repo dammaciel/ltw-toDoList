@@ -72,11 +72,11 @@ function getListInfoById($id,$info){
     return $statement->fetch()[$info];
 }
 
-function addItemToList($task, $date, $list)
+function addItemToList($task, $date)
 {
     global $db;
-    $statement = $db->prepare('INSERT INTO items (title, dataDue, color) VALUES (?,?,?)');
-    if ($statement->execute([$task, $date, NULL])) {
+    $statement = $db->prepare('INSERT INTO items (title, dataDue, color, completed) VALUES (?,?,?,?)');
+    if ($statement->execute([$task, $date, NULL, 0])) {
         return $db->lastInsertId();
     }
     return false;
@@ -88,6 +88,15 @@ function associateItemList($item, $list){
     $statement = $db->prepare('INSERT INTO list_items (list_id, item_id) VALUES (?,?)');
     if ($statement->execute([$list, $item])) {
         header("location:../index.php");
+        return true;
+    }
+    return false;
+}
+
+function checkItem($id){
+    global $db;
+    $statement = $db->prepare('UPDATE items SET completed = ? WHERE id = ?');
+    if($statement->execute([1,$id])){
         return true;
     }
     return false;

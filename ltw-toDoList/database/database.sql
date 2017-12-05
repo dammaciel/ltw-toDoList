@@ -20,7 +20,8 @@ CREATE TABLE items (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title VARCHAR,
   dataDue VARCHAR,
-  color VARCHAR
+  color VARCHAR,
+  completed INTEGER
 );
 
 CREATE TABLE list_items (

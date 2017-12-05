@@ -17,7 +17,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <h1>Login</h1>
-        <form action="../action_login.php" method="post"> 
+        <form action="../action_login.php" method="post">
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
             <label><b>Password</b></label>
@@ -33,7 +33,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <h1>Sign Up</h1>
-        <form action="../action_register.php" method="post"> 
+        <form action="../action_register.php" method="post">
             <input type="hidden" name="signup-token" value="<?php echo $_SESSION['signup-token']; ?>">
             <label><b>Username</b></label>
             <input type="text" name="username" placeholder="UserName">
