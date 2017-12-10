@@ -30,7 +30,26 @@ function exitCreateItem() {
     $("#createItem-form").hide();
 }
 
-function checkItem(id){
+function listOrItemCheck() {
+    if(!document.getElementById('searchUser').checked) {
+        document.getElementById('ifAny').style.display = 'block';
+        document.getElementById('ifItems').style.display = 'block';
+        document.getElementById('ifUsers').style.display = 'none';
+        if (document.getElementById('searchList').checked) {
+            document.getElementById('ifAny').style.display = 'block';
+            document.getElementById('ifLists').style.display = 'block';
+            document.getElementById('ifUsers').style.display = 'none';
+        } else {
+            document.getElementById('ifLists').style.display = 'none';
+        }
+    }else{
+        document.getElementById('ifAny').style.display = 'block';
+        document.getElementById('ifItems').style.display = 'none';
+        document.getElementById('ifUsers').style.display = 'block';
+    }
+}
 
+function goBack() {
+    window.history.back();
 }
 

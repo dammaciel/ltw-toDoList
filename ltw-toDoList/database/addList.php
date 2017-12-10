@@ -1,11 +1,24 @@
 <?php
 include_once ('listUtils.php');
+$share = htmlspecialchars($_POST['share']);
 
-$listTitle = htmlspecialchars($_POST['title']);
-$category = htmlspecialchars($_POST['category']);
-$username = htmlspecialchars($_SESSION['login-user']);
+if(isset($_POST["accept"])) {
+    $listTitle = htmlspecialchars($_POST['title']);
+    $category = htmlspecialchars($_POST['category']);
+    $color = htmlspecialchars($_POST['color']);
+    $isPublic = htmlspecialchars($_POST['isPublic']);
+    $username = htmlspecialchars($_SESSION['login-user']);
+    $list = htmlspecialchars($_POST['list']);
 
-
-if($listTitle && $category){
-    addListToUser($username, $listTitle, $category);
+    if (empty($list)) {
+        if ($listTitle && $category) {
+            $list = addListToUser($username, $listTitle, $category, $color);
+            associateUserList($list, getIdByUserName($username), $isPublic);
+        }
+    } else {
+        associateUserList($list, getIdByUserName($username), $isPublic);
+        acceptShare($share);
+    }
+}else if (isset($_POST["reject"])){
+    rejectShare($share);
 }

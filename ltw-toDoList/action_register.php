@@ -1,9 +1,10 @@
 <?php
 include_once('database/users.php');
-
 $username = htmlspecialchars($_POST['username']);
 $password = htmlspecialchars($_POST['password']);
+$r_password = htmlspecialchars($_POST['r_password']);
 $fullname = htmlspecialchars($_POST['fullname']);
+$email = htmlspecialchars($_POST['email']);
 $date = htmlspecialchars($_POST['birthDate']);
 $gender = htmlspecialchars($_POST['gender']);
 
@@ -13,20 +14,16 @@ if ($_SESSION['signup-token'] !== $_POST['signup-token']) {
 }
 $_SESSION['token'] = generate_random_token();
 
-if($username && $password){
-    if(!usernameAlreadyExists($username)){
-        if(validatePassword($password))
-            signUp($username,$fullname,$date,$password,$gender);
-        else {
-            header("Location:".$_SERVER['HTTP_REFERER']."");
-            $_SESSION["ERROR"] = "Password must be at least 6 characters.";
-        }
-    } else {
-        header("Location:".$_SERVER['HTTP_REFERER']."");
-        $_SESSION["ERROR"] = "Choose a different email address. This one is not available. If this is you log in now.";
+if (!usernameAlreadyExists($username)) {
+    if($password==$r_password){
+    signUp($username, $fullname, $email, $date, $password, $gender);
+    }else{
+        $_SESSION["ERROR"] = "Passwords don't match!";
+        header("location:../error.php");
     }
-}else{
-    header("Location:".$_SERVER['HTTP_REFERER']."");
-    $_SESSION["ERROR"] = "You must fill ate least Username and Password Field ! ";}
+} else {
+    $_SESSION["ERROR"] = "Choose a different username please";
+    header("location:../error.php");
+}
 
 ?>

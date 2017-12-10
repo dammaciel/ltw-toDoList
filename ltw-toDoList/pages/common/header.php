@@ -27,8 +27,8 @@
 
 <nav id="menu">
     <ul>
-        <li><a href="services.php">Services</a></li>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="contacts.php">Contacts</a></li>
+        <li><a href="../myProfile.php">Profile</a></li>
+        <li><a href="../search.php">Search</a></li>
+        <li><a href="../myShares.php">Shares</a></li>
     </ul>
 </nav>

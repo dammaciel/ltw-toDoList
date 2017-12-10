@@ -28,13 +28,13 @@ function validatePassword($password){
     return false;
 }
 
-function signUp($username,$fullname,$date,$password,$gender){
+function signUp($username,$fullname,$email, $date,$password,$gender){
     global $db;
     if(strtoupper($gender)=='FEMALE')
-        $photo = 'photo0F.jpg';
-    else $photo = 'photo0.jpg';
-    $statement = $db->prepare('INSERT INTO users (username,fullname,birthDate,photoId,gender,password) VALUES (?,?,?,?,?,?)');
-    if($statement->execute([$username,$fullname,$date,$photo,$gender,password_hash($password, PASSWORD_DEFAULT)])){
+        $photo = 'female.png';
+    else $photo = 'male.png';
+    $statement = $db->prepare('INSERT INTO users (username,fullname,email,birthDate,photoId,gender,password) VALUES (?,?,?,?,?,?,?)');
+    if($statement->execute([$username,$fullname,$email,$date,$photo,$gender,password_hash($password, PASSWORD_DEFAULT)])){
         $_SESSION['login-user']=$username;
         unset($_SESSION["ERROR"]);
         header("location:../index.php");
@@ -59,7 +59,7 @@ function login($username, $password) {
     }
     else {
         $_SESSION["ERROR"] = "Incorrect Password or Username, try again!";
-        header("Location:".$_SERVER['HTTP_REFERER']."");
+        header("location:../error.php");
         exit();
     }
 }
@@ -77,6 +77,13 @@ function getIdByUserName($userName){
     return $statement->fetch()['id'];
 }
 
+function getUsernameById($id){
+    global $db;
+    $statement = $db->prepare('SELECT username FROM users WHERE id = ? ');
+    $statement->execute([$id]);
+    return $statement->fetch()['username'];
+}
+
 function getUserInfoByUserName($username,$info){
     if($info == 'password')
         return null;
@@ -86,6 +93,42 @@ function getUserInfoByUserName($username,$info){
     $statement->execute([$username]);
 
     return $statement->fetch()[$info];
+}
+
+function updateProfile($id, $username, $fullname, $email, $birthDate){
+    global $db;
+    $statement = $db->prepare('UPDATE users SET username = ?, fullName= ?, email=?, birthDate=? WHERE id = ?');
+    if($statement->execute([$username, $fullname, $email, $birthDate, $id])){
+        $_SESSION['login-user']=$username;
+        return true;
+    }
+    return false;
+}
+
+function changePassword($password, $id){
+    global $db;
+    $statement = $db->prepare('UPDATE users SET password= ? WHERE id = ?');
+    if($statement->execute([password_hash($password, PASSWORD_DEFAULT), $id])){
+        return true;
+    }
+    return false;
+}
+
+function getUsers(){
+    global $db;
+
+    $statement = $db->prepare('SELECT * FROM users');
+    $statement->execute([]);
+
+    return  $statement->fetchAll();
+}
+
+function uploadUserPhoto($username){
+    global $db;
+    $idPhoto = 'photo'.getUserInfoByUserName($username,'id').'.jpg';
+    $statement = $db->prepare('UPDATE users SET photoId = ? WHERE username = ?');
+    $statement->execute([$idPhoto,$username]);
+    return $statement->errorCode();
 }
 
 ?>
